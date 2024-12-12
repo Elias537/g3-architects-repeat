@@ -19,6 +19,8 @@
 }
 
 .btn-primary {
+    font-size: 1.25rem;
+    font-weight: 600;
     background-color: #FF900E;
     color: white;
     padding: 20px 24px;
@@ -31,7 +33,7 @@
 
 }
 
-/* dark-2 */
+/* dark-3 */
 .text-light-gray {
     color: #727272;
 }
@@ -91,13 +93,116 @@ main>section {
     margin-bottom: 50px;
 }
 
+.teams {
+    align-items: center;
+    gap: 80px;
+}
+
+.team-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.quick-list {
+    max-width: 530px;
+    align-content: center;
+
+}
+
+#quick-list {
+    color: #727272;
+    font-weight: 500;
+}
+
+#Features {
+    color: #FF900E;
+    /* font-weight: 700; */
+}
+
+/* features section styles  */
+.features {
+    gap: 140px;
+}
+
+.featured-content {
+    width: 700px;
+}
+
+.feature-card {
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+#features-section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.featured-architect img {
+    width: 100%;
+}
+
+#experience-badge {
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+#experience-year {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+
 /* Responsive media queries for mobile  */
 
 @media screen and (max-width:576px) {
 
     .navbar,
-    .navlinks {
+    .navlinks,
+    .teams,
+    .features {
         flex-direction: column;
     }
 
+
+    .team-image-container {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-content {
+        width: 100%;
+    }
+
+    #experience-badge {
+        margin: 0 auto;
+
+    }
+}
+
+/* Responsive media queries for medium devices */
+
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    .navbar,
+    .teams,
+    .features {
+        flex-direction: column;
+    }
+
+    #experience-badge {
+        margin: 0 auto;
+        margin-left: 200px;
+    }
 }
