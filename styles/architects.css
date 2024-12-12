@@ -158,7 +158,41 @@ main>section {
     font-weight: 800;
 }
 
+.facts-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
+}
 
+.fact-card {
+    border: 1px solid #FF900E;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.fact-icon {
+    margin-top: 10px;
+}
+
+.fact-number {
+    margin-bottom: 10px;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.fact-name {
+    margin-top: 10px;
+    font-size: 1.25rem;
+    font-weight: 500px;
+}
+
+.fact-description {
+    width: 540px;
+}
 
 
 
