@@ -211,11 +211,19 @@ main>section {
     }
 
 
-    .team-image-container {
+    .team-image-container{
         grid-template-columns: 1fr;
     }
 
-    .featured-content {
+    .facts-container{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 10px;
+
+    }
+
+    .featured-content, 
+    .fact-description, .fact-card {
         width: 100%;
     }
 
@@ -234,9 +242,19 @@ main>section {
     .features {
         flex-direction: column;
     }
-
     #experience-badge {
         margin: 0 auto;
-        margin-left: 200px;
+       }
+    .some-facts{
+        padding: 20px;
+    }
+    .facts-container {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 10px;
+    }
+    .fact-card{
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
 }
