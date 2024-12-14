@@ -217,11 +217,13 @@ footer{
 }
 
 .footer-content{
+    border: 1px solid tomato;
+    max-width: 100%;
+    height: fit-content;
     font-size: 1.25rem;
     font-weight: 500;
     text-align: center;
     color: #424242;
-    padding: 40px 400px;
 }
 
 
@@ -241,11 +243,17 @@ footer{
     .sponsor-container {
         flex-direction: column;
     }
+    .banner-image {
+        max-width: 100%;
+    }
 
 
     .team-image-container{
         grid-template-columns: 1fr;
         max-width: 100%;
+    }
+    .fact-card{
+        margin-bottom: 10px;
     }
 
 
@@ -264,8 +272,7 @@ footer{
         margin-top: 20px;
 
     }
-
-
+    
 
 }
 
